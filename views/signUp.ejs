@@ -14,11 +14,11 @@
     <p class="sign" align="center">Sign Up</p>
     <p class="forgot" align="center"><%=message%></p>
     <form class="form1" action="/signUp" method="post">
-      <input class="un " type="text" align="center" placeholder="First Name" name="fName">
-      <input class="pass" type="text" align="center" placeholder="Last Name" name="lName">
-      <input class="pass" type="email" align="center" placeholder="Email" name="email">
-      <input class="pass" type="password" align="center" placeholder="Password" name="password1">
-      <input class="pass" type="password" align="center" placeholder="Confirm Password" name="password2">
+      <input class="un " type="text" align="center" placeholder="First Name" name="fName" required>
+      <input class="pass" type="text" align="center" placeholder="Last Name" name="lName" required>
+      <input class="pass" type="email" align="center" placeholder="Email" name="email" required>
+      <input class="pass" type="password" align="center" placeholder="Password (8 Characters)" name="password1" min="8" required>
+      <input class="pass" type="password" align="center" placeholder="Confirm Password" name="password2" min="8" required>
       <button type="submit" name="button" class="submit" align="center">Sign Up</button>
       <p class="forgot" align="center"><a href="/login">Already have an account? Log In</p>
       </form>

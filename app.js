@@ -38,7 +38,7 @@ app.post("/signUp", function (req, res) {
 
   User.findOne({username: username}, function (err, foundUser) {
     if (err) {
-      console.log("no error");
+      console.log(err);
     } else {
       if (foundUser) {
         res.render("login", {message: "There is an account associated with email, sign in."});
@@ -87,7 +87,6 @@ app.post("/login", function (req, res) {
           }
 });
       }else {
-        console.log(foundUser);
         res.render("signUp", {message: "Username not found please sign up."})
       }
 
@@ -149,4 +148,4 @@ app.get("/login", function (req, res) {
 
 app.listen(process.env.PORT || 3000, function () {
   console.log("server is running");
-}); 
+});

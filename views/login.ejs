@@ -14,8 +14,8 @@
     <p class="sign" align="center">Sign in</p>
     <p class="forgot" align="center"><%=message%></p>
     <form class="form1" action="/login" method="post">
-      <input class="un " type="text" align="center" placeholder="Username" name="username">
-      <input class="pass" type="password" align="center" placeholder="Password" name="password">
+      <input class="un " type="text" align="center" placeholder="Username" name="username" required>
+      <input class="pass" type="password" align="center" placeholder="Password" name="password" required>
       <button type="submit" name="button" class="submit" align="center">Sign In</button>
       <p class="forgot" align="center"><a href="/signUp">Dont have an account? Sign up</p>
     </form>
@@ -24,4 +24,4 @@
 
 </body>
 
-</html> 
+</html>
