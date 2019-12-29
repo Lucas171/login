@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Sign in</title>
+</head>
+
+<body>
+  <div class="main">
+    <p class="sign" align="center">Welcome, <%=firstName%></p>
+    <div class="" style="padding: 40px">
+
+
+    <p>Name: <%=name%></p>
+    <p>Email: <%=email%></p>
+    </div>
+    <div class="" style="text-align: center">
+
+    <form class="" action="/logout" method="post" style="display: inline">
+      <button type="submit" name="button" align="center" >Log Out</button>
+    </form>
+    <form class="" action="/deleteAccount" method="post" style="display: inline">
+      <button type="submit" name="button" align="center" >Delete Account</button>
+
+    </form>
+    </div>
+    </div>
+
+</body>
+
+</html>
